@@ -1,0 +1,23 @@
+.app {
+  .wrapper {
+    gap: 32px;
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    max-width: 1148px;
+    padding: 32px 16px;
+    grid-template-columns: repeat(1fr, 12);
+  
+    .aside {
+      grid-column-end: 4;
+      grid-column-start: 1;
+    }
+
+    .content {
+      border-radius: 8px;
+      grid-column-end: 12;
+      grid-column-start: 4;
+      background-color: $gray-600;
+    }
+  }
+}
